@@ -9,6 +9,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "classnames": "^2.2.5",
     "css-loader": "^0.23.1",
+    "gh-pages": "^0.11.0",
     "image-webpack-loader": "^1.8.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
@@ -20,7 +21,8 @@
     "webpack-env": "^0.8.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --port 8000 --inline --hot --content-base src",
-    "build": "rm -rf dist && env NODE_ENV=production webpack --progress -p --output-path dist && cp src/*.gif src/*.jpg src/*.html dist"
+    "start":  "webpack-dev-server --progress --colors --port 8000 --inline --hot --content-base src",
+    "build":  "rm -rf dist && env NODE_ENV=production webpack --progress -p --output-path dist && cp src/*.gif src/*.jpg src/*.html dist && echo 'sams-29th-birthday.toolmantim.com' >> dist/CNAME",
+    "deploy": "npm run build && gh-pages -d dist"
   }
 }
