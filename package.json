@@ -21,6 +21,6 @@
   },
   "scripts": {
     "start": "webpack-dev-server --progress --colors --port 8000 --inline --hot --content-base src",
-    "build": "webpack -p --output-path build"
+    "build": "rm -rf dist && env NODE_ENV=production webpack --progress -p --output-path dist && cp src/*.gif src/*.jpg src/*.html dist"
   }
 }
