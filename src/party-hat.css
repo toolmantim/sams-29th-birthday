@@ -1,0 +1,9 @@
+@keyframes party-hat-bounce {
+  from { transform: translateY(0px) rotate(-5deg); }
+  to   { transform: translateY(-5px) rotate(5deg); }
+}
+
+.party-hat-bounce {
+  will-animate: transform;
+  animation: 0.25s party-hat-bounce alternate infinite;
+}

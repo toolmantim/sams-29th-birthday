@@ -1,0 +1,9 @@
+@keyframes party-sunnies-deal-with-it {
+  from { transform: translateY(-30px); }
+  to   { transform: translateY(0px); }
+}
+
+.party-sunnies-deal-with-it {
+  will-animate: transform;
+  animation: 3s party-sunnies-deal-with-it infinite;
+}

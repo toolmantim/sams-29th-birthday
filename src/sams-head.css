@@ -1,0 +1,25 @@
+@keyframes sams-head-spin {
+  from {
+    transform: rotate(-.15turn);
+  }
+  to {
+    transform: rotate(.85turn);
+  }
+}
+
+.SamsHead {
+  will-animate: transform;
+  animation: 10s sams-head-spin infinite linear;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  background-image: url('sam.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #F8E71C,
+              0 0 0 6px #D0021B,
+              0 0 0 9px #F5A623,
+              0 0 0 12px #4A90E2;
+}

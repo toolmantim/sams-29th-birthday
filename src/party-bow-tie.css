@@ -1,0 +1,9 @@
+@keyframes party-bow-tie-twizzle {
+  from { transform: scale(1) rotate(-10deg); }
+  to   { transform: scale(1.1) rotate(10deg);  }
+}
+
+.party-bow-tie-twizzle {
+  will-animate: transform;
+  animation: .25s party-bow-tie-twizzle alternate infinite;
+}

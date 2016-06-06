@@ -1,0 +1,9 @@
+@keyframes party-googly-eyes-rotate {
+  from { transform: rotate(0turn); }
+  to   { transform: rotate(1turn); }
+}
+
+.party-googly-eyes-rotate {
+  will-animate: transform;
+  animation: 1s party-googly-eyes-rotate linear infinite;
+}

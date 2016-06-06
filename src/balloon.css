@@ -1,0 +1,101 @@
+@keyframes balloon-wobble {
+  from {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-80px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(80px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes float-up {
+  from { transform: translateY(100vh); }
+  to   { transform: translateY(-40vh); }
+}
+
+.Balloon {
+  z-index: 1;
+  position: absolute;
+  will-animate: transform;
+  animation: float-up 30s forwards linear;
+  transform-origin: 50% 50%;
+}
+
+.Balloon__inner {
+  will-animate: transform;
+  animation: balloon-wobble 20s infinite linear;
+  transform-origin: 50% 50%;
+}
+
+.Balloon--popped {
+  pointer-events: none;
+  transform-origin: 50% 50%;
+}
+
+@keyframes balloon-string-fall {
+  from {
+    transform: translateY(-10px) rotate(0turn);
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(500px) rotate(-0.075turn);
+    opacity: 0;
+  }
+}
+
+.Balloon--popped .Balloon__rubber, .Balloon--popped .Balloon__shadow {
+  display: none;
+}
+
+.Balloon--popped .Balloon__string {
+  will-animate: transform;
+  animation: balloon-string-fall 500ms ease-in forwards;
+  animation-timing-function: ease-in;
+  transform-origin: 50% 50%;
+}
+
+
+@keyframes float-in-and-out {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.Balloon__object {
+  will-animate: transform;
+  animation: 5s float-in-and-out infinite linear alternate;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes float-in-and-out-shadow {
+  from {
+    transform: scale(1);
+    opacity: .7;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: .45;
+  }
+}
+
+.Balloon__shadow {
+  will-animate: opacity, transform;
+  animation: 5s float-in-and-out-shadow infinite linear alternate;
+  transform-origin: 50% 50%;
+}

@@ -1,0 +1,179 @@
+.ExplosionOfSams {
+  will-animate: transform;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+}
+
+.ExplosionOfSams--not-exploding {
+  display: none;
+}
+
+.ExplosionOfSams__little-sam {
+  will-animate: transform;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+}
+
+.ExplosionOfSams__little-sam__inner, .ExplosionOfSams__little-sam__inner__inner {
+  will-animate: transform;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.ExplosionOfSams__little-sam__sams_face {
+  will-animate: transform;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('sam.jpg');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+@keyframes davros-king-of-gravity-1 {
+  0%   { transform: translateY(0px); }
+  25%  { transform: translateY(-30px); transition-timing-function: cubic-bezier(0.52,0,0.16,1); }
+  100% { transform: translateY(275px); transition-timing-function: linear; }
+}
+@keyframes davros-king-of-gravity-2 {
+  0%   { transform: translateY(0px); }
+  25%  { transform: translateY(-60px); transition-timing-function: cubic-bezier(0.52,0,0.16,1); }
+  100% { transform: translateY(300px); transition-timing-function: linear; }
+}
+@keyframes davros-king-of-gravity-3 {
+  0%   { transform: translateY(0px); }
+  25%  { transform: translateY(-90px); transition-timing-function: cubic-bezier(0.52,0,0.16,1); }
+  100% { transform: translateY(250px); transition-timing-function: linear; }
+}
+@keyframes davros-king-of-gravity-4 {
+  0%   { transform: translateY(0px); }
+  25%  { transform: translateY(-15px); transition-timing-function: cubic-bezier(0.52,0,0.16,1); }
+  100% { transform: translateY(320px); transition-timing-function: linear; }
+}
+@keyframes davros-king-of-gravity-5 {
+  0%   { transform: translateY(0px); }
+  25%  { transform: translateY(-43px); transition-timing-function: cubic-bezier(0.52,0,0.16,1); }
+  100% { transform: translateY(280px); transition-timing-function: linear; }
+}
+@keyframes davros-king-of-gravity-6 {
+  0%   { transform: translateY(0px); }
+  25%  { transform: translateY(-103px); transition-timing-function: cubic-bezier(0.52,0,0.16,1); }
+  100% { transform: translateY(210px); transition-timing-function: linear; }
+}
+
+@keyframes davros-king-of-hiding {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes davros-king-of-exploding-to-the-left-1 {
+  from { transform: translateX(0px); } to { transform: translateX(-200px); }
+}
+@keyframes davros-king-of-exploding-to-the-left-2 {
+  from { transform: translateX(0px); } to { transform: translateX(-250px); }
+}
+@keyframes davros-king-of-exploding-to-the-left-3 {
+  from { transform: translateX(0px); } to { transform: translateX(-150px); }
+}
+@keyframes davros-king-of-exploding-to-the-left-4 {
+  from { transform: translateX(0px); } to { transform: translateX(-30px); }
+}
+@keyframes davros-king-of-exploding-to-the-left-5 {
+  from { transform: translateX(0px); } to { transform: translateX(-75px); }
+}
+@keyframes davros-king-of-exploding-to-the-left-6 {
+  from { transform: translateX(0px); } to { transform: translateX(-188px); }
+}
+
+@keyframes davros-king-of-exploding-to-the-right-1 {
+  from { transform: translateX(0px); } to { transform: translateX(200px); }
+}
+@keyframes davros-king-of-exploding-to-the-right-2 {
+  from { transform: translateX(0px); } to { transform: translateX(250px); }
+}
+@keyframes davros-king-of-exploding-to-the-right-3 {
+  from { transform: translateX(0px); } to { transform: translateX(150px); }
+}
+@keyframes davros-king-of-exploding-to-the-right-4 {
+  from { transform: translateX(0px); } to { transform: translateX(92px); }
+}
+@keyframes davros-king-of-exploding-to-the-right-5 {
+  from { transform: translateX(0px); } to { transform: translateX(114px); }
+}
+@keyframes davros-king-of-exploding-to-the-right-6 {
+  from { transform: translateX(0px); } to { transform: translateX(10px); }
+}
+
+@keyframes davros-king-of-spinning {
+  from { transform: rotate(0turn); }
+  to   { transform: rotate(1turn); }
+}
+
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam[data-davros-king-of-integers='1'] {
+  animation: 1.5s davros-king-of-gravity-1 forwards, .2s .6s davros-king-of-hiding forwards;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam[data-davros-king-of-integers='2'] {
+  animation: 1.5s davros-king-of-gravity-2 forwards, .2s .65s davros-king-of-hiding forwards;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam[data-davros-king-of-integers='3'] {
+  animation: 1.5s davros-king-of-gravity-3 forwards, .2s .7s davros-king-of-hiding forwards;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam[data-davros-king-of-integers='4'] {
+  animation: 1.5s davros-king-of-gravity-4 forwards, .2s .6s davros-king-of-hiding forwards;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam[data-davros-king-of-integers='5'] {
+  animation: 1.5s davros-king-of-gravity-5 forwards, .2s .65s davros-king-of-hiding forwards;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam[data-davros-king-of-integers='6'] {
+  animation: 1.5s davros-king-of-gravity-6 forwards, .2s .7s davros-king-of-hiding forwards;
+}
+
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--left[data-davros-king-of-integers='1'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-left-1 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--left[data-davros-king-of-integers='2'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-left-2 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--left[data-davros-king-of-integers='3'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-left-3 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--left[data-davros-king-of-integers='4'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-left-4 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--left[data-davros-king-of-integers='5'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-left-5 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--left[data-davros-king-of-integers='6'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-left-6 forwards ease-out;
+}
+
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--right[data-davros-king-of-integers='1'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-right-1 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--right[data-davros-king-of-integers='2'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-right-2 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--right[data-davros-king-of-integers='3'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-right-3 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--right[data-davros-king-of-integers='4'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-right-4 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--right[data-davros-king-of-integers='5'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-right-5 forwards ease-out;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--right[data-davros-king-of-integers='6'] .ExplosionOfSams__little-sam__inner {
+  animation: 1.5s davros-king-of-exploding-to-the-right-6 forwards ease-out;
+}
+
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--left .ExplosionOfSams__little-sam__inner__inner {
+  animation: 1s davros-king-of-spinning forwards infinite;
+}
+.ExplosionOfSams--exploding .ExplosionOfSams__little-sam--right .ExplosionOfSams__little-sam__inner__inner {
+  animation: 1s davros-king-of-spinning backwards infinite;
+}

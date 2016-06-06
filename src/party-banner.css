@@ -1,0 +1,39 @@
+.PartyBanner {
+  position: absolute;
+  z-index: 1;
+  top: calc(50% - 24px);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font: 600 48px "American Typewriter";
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0 4px 0 rgba(0, 0, 50, 0.4);
+}
+
+@keyframes bounce-up-and-down {
+  0% {
+    transform: translateY(-15px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.PartyBanner span {
+  will-animate: transform;
+  display: inline-block;
+  position: relative;
+  animation: bounce-up-and-down 1s infinite linear;
+  transform-origin: 50% 50%;
+}
