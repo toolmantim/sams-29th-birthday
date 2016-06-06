@@ -26,7 +26,7 @@ class BirthdayParty extends React.Component {
       <div>
         <PartyBanner text="Happy 29th Birthday Sam!" />
         {this.state.balloons.map(function(balloon) {
-          return <Balloon key={balloon.id} top={balloon.top} left={balloon.left} />
+          return <Balloon key={balloon.id} left={balloon.left} />
         })}
         {this.state.heads.map(function(head) {
           return <SamsHead key={head.id} top={head.top} left={head.left} />
@@ -46,7 +46,6 @@ class BirthdayParty extends React.Component {
   _newBalloon() {
     return {
       id: uuid(),
-      top: 0,
       left: Math.random()
     }
   }
