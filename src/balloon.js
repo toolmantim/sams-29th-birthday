@@ -31,7 +31,7 @@ class Balloon extends React.Component {
     return (
       <div className={classnames("Balloon",{"Balloon--popped": this.state.popped})} style={this._style()}>
         <div className="Balloon__inner">
-          <svg viewBox="0 0 300 600" onClick={() => this._pop()}>
+          <svg className="Balloon__inner__touch-action" viewBox="0 0 300 600" onTouchStart={() => this._pop()} onClick={() => this._pop()}>
             <defs>
               <radialGradient cx="50%" cy="21.5625%" fx="50%" fy="21.5625%" r="44.7005208%" id={this._specularHighlightId()}>
                   <stop stopColor={Color(this.state.color).lighten(0.5).hexString()} offset="0%"></stop>

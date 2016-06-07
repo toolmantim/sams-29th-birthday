@@ -35,6 +35,10 @@
   transform-origin: 50% 50%;
 }
 
+.Balloon__inner__touch-action {
+  touch-action: manipulation;
+}
+
 .Balloon--popped {
   pointer-events: none;
   transform-origin: 50% 50%;
