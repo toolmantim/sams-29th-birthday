@@ -4,6 +4,6 @@
 }
 
 .party-sunnies-deal-with-it {
-  will-animate: transform;
+  will-change: transform;
   animation: 3s party-sunnies-deal-with-it infinite;
 }

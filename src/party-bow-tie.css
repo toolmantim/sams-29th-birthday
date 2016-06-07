@@ -4,6 +4,6 @@
 }
 
 .party-bow-tie-twizzle {
-  will-animate: transform;
+  will-change: transform;
   animation: .25s party-bow-tie-twizzle alternate infinite;
 }

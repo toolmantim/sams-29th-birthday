@@ -24,13 +24,13 @@
 .Balloon {
   z-index: 1;
   position: absolute;
-  will-animate: transform;
+  will-change: transform;
   animation: float-up 30s forwards linear;
   transform-origin: 50% 50%;
 }
 
 .Balloon__inner {
-  will-animate: transform;
+  will-change: transform;
   animation: balloon-wobble 20s infinite linear;
   transform-origin: 50% 50%;
 }
@@ -63,7 +63,7 @@
 }
 
 .Balloon--popped .Balloon__string {
-  will-animate: transform;
+  will-change: transform;
   animation: balloon-string-fall 500ms ease-in forwards;
   animation-timing-function: ease-in;
   transform-origin: 50% 50%;
@@ -80,7 +80,7 @@
 }
 
 .Balloon__object {
-  will-animate: transform;
+  will-change: transform;
   animation: 5s float-in-and-out infinite linear alternate;
   transform-origin: 50% 50%;
   transform-style: preserve-3d;
@@ -99,7 +99,7 @@
 }
 
 .Balloon__shadow {
-  will-animate: opacity, transform;
+  will-change: opacity, transform;
   animation: 5s float-in-and-out-shadow infinite linear alternate;
   transform-origin: 50% 50%;
 }

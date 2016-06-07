@@ -8,7 +8,7 @@
 }
 
 .SamsHead {
-  will-animate: transform;
+  will-change: transform;
   animation: 10s sams-head-spin infinite linear;
   position: absolute;
   top: calc(50% - 50px);

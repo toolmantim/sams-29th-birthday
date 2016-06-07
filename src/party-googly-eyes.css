@@ -4,6 +4,6 @@
 }
 
 .party-googly-eyes-rotate {
-  will-animate: transform;
+  will-change: transform;
   animation: 1s party-googly-eyes-rotate linear infinite;
 }

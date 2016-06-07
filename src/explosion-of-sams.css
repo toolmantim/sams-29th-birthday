@@ -1,5 +1,5 @@
 .ExplosionOfSams {
-  will-animate: transform;
+  will-change: transform;
   position: absolute;
   top: 38%;
   left: 50%;
@@ -10,7 +10,7 @@
 }
 
 .ExplosionOfSams__little-sam {
-  will-animate: transform;
+  will-change: transform;
   position: absolute;
   top: calc(50% - 10px);
   left: calc(50% - 10px);
@@ -19,14 +19,14 @@
 }
 
 .ExplosionOfSams__little-sam__inner, .ExplosionOfSams__little-sam__inner__inner {
-  will-animate: transform;
+  will-change: transform;
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
 .ExplosionOfSams__little-sam__sams_face {
-  will-animate: transform;
+  will-change: transform;
   position: absolute;
   height: 100%;
   width: 100%;

@@ -31,7 +31,7 @@
 }
 
 .PartyBanner span {
-  will-animate: transform;
+  will-change: transform;
   display: inline-block;
   position: relative;
   animation: bounce-up-and-down 1s infinite linear;

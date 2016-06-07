@@ -4,6 +4,6 @@
 }
 
 .party-hat-bounce {
-  will-animate: transform;
+  will-change: transform;
   animation: 0.25s party-hat-bounce alternate infinite;
 }
